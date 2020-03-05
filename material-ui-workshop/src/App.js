@@ -1,18 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Grid from "@material-ui/core/Grid";
+import React from "react";
+import "./App.css";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import MyDialog from "./MyDialog";
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
         <Container fixed>
-            <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+            <MyDialog title="Dialog A" />
+            <MyDialog title="Dialog B" />
+            <MyDialog title="Dialog C" />
         </Container>
     </div>
-  );
-}
+);
 
 export default App;
